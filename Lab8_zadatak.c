@@ -8,7 +8,8 @@ te treba ignorirati i razliku izmedu velikih i malih slova. Funkcija treba imati
 
 int palindrom(char* s)
 
-Pogledati test primjere za dodatno pojasnjenje. Svaki ulazni niz zavrsava znakom za novi red. Najveca duljina ulaznog niza ce biti 1000 znakova.
+Pogledati test primjere za dodatno pojasnjenje. Svaki ulazni niz zavrsava znakom za novi red.
+Najveca duljina ulaznog niza ce biti 1000 znakova.
 
 Test primjeri:
 
@@ -27,7 +28,7 @@ int palindrom(char* s);
 
 int main()
 {
-    char unos[100+1] ="", recenica[100+1] = "", delimit[] = " ,.:!?";
+    char unos[1000+1] ="", recenica[1000+1] = "", delimit[] = " ,.:!?";
     char *token;
 
     scanf(" %[^\n]", unos);
