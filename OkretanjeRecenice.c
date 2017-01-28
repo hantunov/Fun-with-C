@@ -18,7 +18,7 @@ int main()
     do{
         br_rijeci++;
         i++;
-        token[i] = strtok(NULL, " ;,.?!");
+        token[i] = strtok(NULL, " -;,.?!");
     }while(token[i]);
 
     for(i=br_rijeci-1; i>=0; i--){
