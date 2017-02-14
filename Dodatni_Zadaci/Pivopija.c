@@ -1,8 +1,9 @@
-/*Napišite C program koji uèitava podatke o pivima iz datoteke pivo.in. Podaci o svakom pivu se sastoje od sljedeæeg:
+/*NapiÅ¡ite C program koji uÄitava podatke o pivima iz datoteke pivo.in. Podaci o svakom pivu se sastoje od sljedeÄ‡eg:
 naziv_piva -  string od max 50 znakova
-kolicina -  kolièina piva u jednoj boci u litrama  - pozitivni realni broj
+kolicina -  koliÄina piva u jednoj boci u litrama  - pozitivni realni broj
 cijena - cijena jedne boce u kunama - pozitivni realni broj
-Napišite funkciju koja æe pronaæi i kao rezultat vratiti koje pivo je najisplativije (najjeftinije po litri). U main programu zapisati rezultat u datoteku pivo.out.
+NapiÅ¡ite funkciju koja Ä‡e pronaÄ‡i i kao rezultat vratiti koje pivo je najisplativije (najjeftinije po litri).
+U main programu zapisati rezultat u datoteku pivo.out.
 
 U zadatku se koriste ulazne ili izlazne datoteke
 
