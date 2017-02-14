@@ -1,4 +1,6 @@
-/*Napisati C program koji æe ispisati sva putovanja koja zadovoljavaju traeni budet. Datoteka agencija.dat sadri podatke o putovanjima u sljedeæem obliku:
+/*
+Napisati C program koji Ä‡e ispisati sva putovanja koja zadovoljavaju traÅ¾eni budÅ¾et. Datoteka agencija.dat sadrÅ¾i
+podatke o putovanjima u sljedeÄ‡em obliku:
 naziv destinacije: 30+1 znakova
 dan polaska: int (pretpostaviti da svaki mjesec ima tocno 31 dan)
 mjesec polaska: int
@@ -6,9 +8,10 @@ broj dana: int
 cijena: double
 popust: int (postotak)
 
-Potrebno je uèitati koliki je budet (od-do), te ispisati sva putovanja koja su unutar budeta, poredano po ukupnoj cijeni, u datoteku dostupno.txt.
+Potrebno je uÄitati koliki je budÅ¾et (od-do), te ispisati sva putovanja koja su unutar budÅ¾eta, poredano po ukupnoj cijeni,
+u datoteku dostupno.txt.
 
-Napomena: treba uzeti u obzir i postotak popusta kod izraèuna cijene.
+Napomena: treba uzeti u obzir i postotak popusta kod izraÄuna cijene.
 
 U zadatku se koriste ulazne ili izlazne datoteke
 
