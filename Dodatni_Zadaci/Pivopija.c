@@ -1,4 +1,5 @@
-/*Napišite C program koji učitava podatke o pivima iz datoteke pivo.in. Podaci o svakom pivu se sastoje od sljedećeg:
+/*
+Napišite C program koji učitava podatke o pivima iz datoteke pivo.in. Podaci o svakom pivu se sastoje od sljedećeg:
 naziv_piva -  string od max 50 znakova
 kolicina -  količina piva u jednoj boci u litrama  - pozitivni realni broj
 cijena - cijena jedne boce u kunama - pozitivni realni broj
