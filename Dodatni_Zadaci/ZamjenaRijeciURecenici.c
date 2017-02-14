@@ -1,10 +1,11 @@
 /*
-Napisati C program koji æe zamijeniti prve dvije rijeèi u reèenici. 
-Program od korisnika traiti uèitavanje reèenice (koja moe sadravati i prazna mjesta),
-sve dok se ne uèita string koji nema praznih mjesta. Zatim se unutar funkcije prototipa
-void zamijeni (char *recenica) u reèenici moraju zamijeniti mjesta prve dvije rijeèi,
-vodeæi raèuna o tome da reèenica mora poèinjati velikim poèetnim slovom.
+Napisati C program koji Ã¦e zamijeniti prve dvije rijeÃ¨i u reÃ¨enici. 
+Program od korisnika traÅ¾iti uÃ¨itavanje reÃ¨enice (koja moÅ¾e sadrÅ¾avati i prazna mjesta),
+sve dok se ne uÃ¨ita string koji nema praznih mjesta. Zatim se unutar funkcije prototipa
+void zamijeni (char *recenica) u reÃ¨enici moraju zamijeniti mjesta prve dvije rijeÃ¨i,
+vodeÃ¦i raÃ¨una o tome da reÃ¨enica mora poÃ¨injati velikim poÃ¨etnim slovom.
 */
+
 
 #include <stdio.h>
 #include <stdlib.h>
