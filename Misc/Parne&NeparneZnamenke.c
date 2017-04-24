@@ -16,8 +16,8 @@ int main()
     int *ptrP = &zbrP;
     int *ptrN = &zbrN;
 
-    printf("Unesite neki cijeli broj: ");
-    scanf("%d", &a);
+    printf("Unesite neki cijeli broj (do 8 znamenki): ");
+    scanf("%8d", &a);
     printf("\n");
     if(a<0) a = abs(a);
     prebroji(a, ptrP, ptrN);
