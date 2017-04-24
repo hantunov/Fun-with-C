@@ -18,7 +18,7 @@ int main()
 
     printf("Unesite neki cijeli broj (do 9 znamenki): ");
     //Ako prihvacamo brojeve vece od 8 znamenki moze doci do
-    //krivih rezultata (najveci int je 2,147,483,647
+    //krivih rezultata (najveci int je 2,147,483,647)
     scanf("%9d", &a);
     printf("\n");
     if(a<0) a = abs(a);
