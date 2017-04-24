@@ -70,4 +70,7 @@ void prebroji(int a, int *ptrP, int *ptrN){
         }
         printf("\n");
     }
+    
+    //oslobodimo alociranu memoriju (izbjegavamo "visece" pointere)
+    free(znamenke);
 }
