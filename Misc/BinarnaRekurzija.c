@@ -43,17 +43,20 @@ int main()
     int duzinaNiza;
     int sredinaNiza;
 
+    //Unesemo string koji cemo pretrazivati i znak koji trazimo
     printf("Unesite niz znakova: ");
     scanf("%s", niz);
     printf("Unesite trazeni znak: ");
     scanf(" %c", &trazeniZnak);
 
+    //Izracunamo polovicu niza (ovo saljemo u rekurzivnu funkciju kako bi znali kada stati s rekurzijom)
     duzinaNiza = strlen(niz)-1;
     if(duzinaNiza%2 == 0) sredinaNiza = duzinaNiza/2;
     else sredinaNiza = (duzinaNiza/2)+1;
 
     printf("Ispis:\n");
 
+    //Pozivamo rekurzivnu funkciju (brojacu predajemo 0 kao pocetnu vrijednost)
     binarnaPretraga(niz, trazeniZnak, duzinaNiza, sredinaNiza, 0);
 
     return 0;
@@ -61,14 +64,19 @@ int main()
 
 int binarnaPretraga(char* niz, char trazeniZnak, int duzinaNiza, int sredinaNiza, int brojac){
 
+    //Funkcija ce se rekurzivno vrtiti sve dok ne dodjemo do sredine rijeci
     if(brojac<=sredinaNiza){
 
+        //Ispisujemo znak na pocetku niza, pocevsi od 0 (povecava se za 1 u svakom slijedecem krugu rekurzije)
+        //i ako je znak jednak trazenom ispisujemo poruku i prekidamo rekurziju
         printf("Iteracija %d, pozicija %d, znak %c\n", brojac+1, brojac, *(niz+brojac));
         if(*(niz+brojac) == trazeniZnak){
             printf("Znak %c je pronadjen!", trazeniZnak);
             return 0;
         }
 
+        //Ispisujemo znak na kraju niza, pocevsi od duzine niza -1 (smanjuje se za 1 u svakom slijedecem krugu rekurzije)
+        //i ako je znak jednak trazenom ispisujemo poruku i prekidamo rekurziju
         if(duzinaNiza>sredinaNiza) printf("Iteracija %d, pozicija %d, znak %c\n", brojac+1, duzinaNiza, *(niz+duzinaNiza));
         if(*(niz+duzinaNiza) == trazeniZnak){
             printf("Znak %c je pronadjen!", trazeniZnak);
@@ -76,13 +84,16 @@ int binarnaPretraga(char* niz, char trazeniZnak, int duzinaNiza, int sredinaNiza
         }
 
     } else {
+        //Ako nakon sto smo dosli do sredine rijeci nismo nasli znak s obje strane, ispisujemo i prekidamo
         printf("Znak %c nije pronadjen!", trazeniZnak);
         return 0;
     }
 
+    //Povecavanje brojaca i smanjivanje duzine niza u svakom krugu rekurzije
     brojac++;
     duzinaNiza--;
 
+    //Poziv rekurzivne funkcije
     binarnaPretraga(niz, trazeniZnak, duzinaNiza, sredinaNiza, brojac);
 
     return 0;
