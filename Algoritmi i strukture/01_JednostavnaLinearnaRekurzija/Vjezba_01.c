@@ -1,3 +1,10 @@
+/*Korisnik unosi prvo dužinu polja, a onda elemente polja. Polje sadržava cijele brojeve (int). Na kraju korisnik
+unosi broj koji se traži. Nakon toga funkcija korištenjem jednostavne linearne rekruzije pretražuje polje, od prvog
+elementa polja (na poziciji nula) do kraja (do pozicije n-1, gdje je n dužina polja). Ako se element pronađe funkcija
+ispisuje mjesto na kojemu se nalazi traženi cijeli broj i prestaje sa rekruzijom. Ako funkcija ne pronađe traženi cijeli
+broj, onda prestaje s rekruzijom kad dođe do kraja polja. Nakon toga program prestaje s radom.
+Vježba se mora realizirati u programskom jeziku C.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
