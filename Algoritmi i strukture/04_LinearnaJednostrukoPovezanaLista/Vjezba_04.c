@@ -12,9 +12,7 @@ void rekurzivniIspis(Cvor *cvor, int *min, int *max);
 
 int main()
 {
-    int unos, min, max;
-    unos=max=0;
-    min=INT_MAX;
+    int unos = 0, min=INT_MAX, max=INT_MIN;
     Cvor *head, *tail, *temp;
     head=tail=temp=NULL;
 
